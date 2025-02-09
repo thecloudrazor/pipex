@@ -24,3 +24,10 @@ Here document behavior:
 - cmd1 << limiter | cmd1 | cmd2 | cmd3 | ... | cmdn >> outfile
 
 The single angle bracket will overwite the entire file, but the double angle bracket will append after the file.
+
+## current status of the project
+This uploaded version of the project: 
+- DOES NOT handle exit codes properly. I leave it up to you to do research and fix them. 
+- DOES NOT handle $ in any way
+- DOES NOT handle {}, [], (), *
+- DOES handle ' and " inside commands.
